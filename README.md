@@ -2,7 +2,6 @@
 ## Description
 
 ![Diseño](https://user-images.githubusercontent.com/115137407/203375540-884f3588-25a5-411a-a5d2-67ef3151a246.jpg)
-![Sketch](https://user-images.githubusercontent.com/115137407/201474482-9f9a1594-7959-452e-94ab-aa8e3d2c765a.jpg)
 
 ✍️ I am in the design stage of this project. 
 This portal allows you to easily access my media content in just one place. In just one menu, you can scroll to my recent YouTube videos, YouTube Shorts. Access written articles and listen to my Podcast. 
