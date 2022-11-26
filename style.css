@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(229, 244, 250, 0.999);
+    background-color:white;
   }
   nav a{
     color:#06172d;
@@ -52,7 +52,7 @@ body{
   }
     
   .footer {
-    background-color:rgb(145, 198, 245);
+    background-color:rgb(149, 219, 246);
     margin-top: 70px;
     width: 100%;
     padding: 50px 15%;
