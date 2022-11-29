@@ -31,7 +31,6 @@ nav a{
     background-color:white;
     list-style: none;
   }
-
 nav li{
   display:inline-block;
   margin-left: 0px;
@@ -44,6 +43,10 @@ li {
 nav div {
   display: flex;
  }
+.dropdown-content div{
+  display: block;
+  margin: 7px;
+}
 /* Recent videos section set-up */
   .recent-videos div{
     margin-top: 70px;
