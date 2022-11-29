@@ -2,7 +2,18 @@
 body{
   background-color:white;
 }
-/* Navegation section set-up */
+/* Navegation-menu set-up */
+nav {
+  color:#06172d;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align:inherit;
+  padding: 20px;
+}
+nav li{
+
+}
 nav a{
   color:#06172d;
   text-decoration: none;
