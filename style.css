@@ -11,10 +11,6 @@ nav {
   font-size: 16px;
   padding: 20px;
 }
-/* Change the nav color to #rgb(202, 37, 92) (pink) on hover */
-nav a:hover {
-  color: rgb(202, 37, 92);
-}
 nav li{
   display:inline-block;
   margin-left: 10px;
@@ -31,17 +27,22 @@ nav a{
   font-size: 16px;
   text-align:inherit;
   }
+/* Change the nav color to #rgb(202, 37, 92) (pink) on hover */
+nav a:hover {
+  color: rgb(202, 37, 92);
+}
+/* Nav submenu set-up  */
 dropdown-content div{
   display: block;
   margin: 2px;
 }
 nav ul {
-    list-style-type:none;
-    float:center;
-    margin-top: 0px;
-    padding: 10px;
-    overflow:hidden;
-    list-style: none;
+  float:center;
+  margin-top: 0px;
+  padding: 10px;
+  overflow: hidden;
+  list-style: none;
+  width: 100px;
 }
 /* Change the submenu color to rgb(202, 237, 249) on hover */
 ul:hover {
