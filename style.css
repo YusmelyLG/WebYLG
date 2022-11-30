@@ -1,7 +1,6 @@
 
 body{
   background-color:white;
-  
 }
 /* Navegation-menu set-up */
 nav {
@@ -49,6 +48,11 @@ ul:hover {
   background-color:rgb(202, 237, 249);
   border-radius: 5px;
   }
+ 
+/* set-up icon margin */
+.nav a .fa{
+  margin-right: 8px;
+}
 
  
 /* Navegation section set-up */
