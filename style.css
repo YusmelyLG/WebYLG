@@ -31,9 +31,37 @@ nav a:hover {
   color: rgb(202, 37, 92);
 }
 /* Nav submenu set-up  */
-dropdown-content div{
+.dropdown-content-About {
   display: block;
   margin: 2px;
+  visibility: hidden;
+}
+nav:hover .dropdown-content-About{
+  display: block;
+  visibility: visible;
+  position: relative;
+  margin-top: 0px;
+  margin-left: -10px;
+}
+.dropdown-content-Content {
+  display: block;
+  margin: 2px;
+  visibility: hidden;
+}
+nav:hover .dropdown-content-Content{
+  display: block;
+  visibility: visible;
+  position: relative;
+}
+.dropdown-content-Language {
+  display: block;
+  margin: 2px;
+  visibility: hidden;
+}
+nav:hover .dropdown-content-Language {
+  display: block;
+  visibility: visible;
+  position: relative;
 }
 nav ul {
   float:center;
@@ -43,25 +71,12 @@ nav ul {
   list-style: none;
   width: 100px;
 }
-/* Change the submenu color to rgb(202, 237, 249) on hover */
-ul:hover {
-  background-color:rgb(202, 237, 249);
-  border-radius: 5px;
-  }
- 
 /* set-up icon margin */
 .nav a .fa{
   margin-right: 8px;
 }
 
  
-/* Navegation section set-up */
-  
-
-nav div {
-  display: flex;
- }
-
 /* Recent videos section set-up */
   .recent-videos div{
     margin-top: 70px;
