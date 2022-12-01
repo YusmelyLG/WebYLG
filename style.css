@@ -92,6 +92,11 @@ nav ul {
 .main div{
   text-align: center;
 }
+.col-1{
+  flex-grow:-2;
+  margin-left: 150px;
+  margin-right: 150px;
+}
 .col-2{
   flex-grow:2;
   margin-left: 150px;
@@ -118,5 +123,29 @@ button{
   font-size: 15px;
   cursor: pointer;
 }
+h3{
+  position:relative;
+}
+div.text{
+  white-space: nowrap;
+  overflow:visible;
+  text-overflow: "-----"
+}
+
+.main div p{
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: -30px;
+  background-color: none; 
+  text-align: center;
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  width:200px;
+  position: relative;
+}
+
 
 /* Recent videos section set-up */
