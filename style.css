@@ -149,8 +149,17 @@ h2{
 h2 {text-align: center;}
 hr {
   width: 50%;
-  height: 3px;
-  background-color: #022898;
+  height: 5px;
+  background-color:#69C5EA;
   border: none;
-  text-align: center;   /* How to cente the hr */
+  text-align: center;  /* How to cente the hr */
+}
+/* Footer set-up */  
+.footer {
+  background-color:rgb(149, 219, 246);
+  margin-top: 70px;
+  width: 100%;
+  padding: 50px 15%;
+  color: #06172d;
+  display: flex;
 }
