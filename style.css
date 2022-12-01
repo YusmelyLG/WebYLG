@@ -102,7 +102,7 @@ nav ul {
   margin-left: 150px;
   margin-right: 150px;
 }
-.main div h3{
+.main div h2{
   font-weight:300;
   margin-bottom: 20px;
   margin-top: 40px;
@@ -119,11 +119,10 @@ nav ul {
 button{
   background: transparent;
   border: none;
-  padding: 7px 25px;
-  font-size: 15px;
+  padding: 0px 40px;
   cursor: pointer;
 }
-h3{
+h2{
   position:relative;
 }
 .text{
@@ -146,14 +145,12 @@ h3{
   position: relative;
 }
 
-
 /* Recent videos section set-up */
-.recent-videos div{
-  margin-top: 70px;
-  margin-bottom: 70px;
-  border-top: #06172d;
-  border-bottom: #06172d;
-  display: flex;
+.recent-videos div.h3{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+  display:flex;
   text-align: center;
 }
 hr { 
