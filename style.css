@@ -157,8 +157,7 @@ hr {
 /* Footer set-up */  
 .footer {
   background-color:rgb(149, 219, 246);
-  margin-top: 70px;
-  width: 100%;
+  margin-top: 50px;
   padding: 50px 15%;
   color: #06172d;
   display: flex;
@@ -199,7 +198,13 @@ form button{
   font-size: 15px;
   cursor: pointer;
 }
+h4{
+  position: relative;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif
+}
 h5{
   position: relative;
   text-align: center;
+  font-family:'Times New Roman', Times, serif
 }
