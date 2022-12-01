@@ -26,6 +26,9 @@ nav a{
   font-size: 16px;
   text-align:inherit;
   }
+a .fa-solid{
+margin-right: 5px;
+}
 /* Change the nav color to #rgb(202, 37, 92) (pink) on hover */
 nav a:hover {
   color: rgb(202, 37, 92);
@@ -71,75 +74,16 @@ nav ul {
   width: 100px;
 }
 /* set-up icon margin */
-.nav a .fa{
-  margin-right: 8px;
+.fa-solid fa-house{
+  margin-right: 50px;
 }
  
-/* Recent videos section set-up */
-.recent-videos div{
-  margin-top: 70px;
-  margin-bottom: 70px;
-  border-top: #06172d;
-  border-bottom: #06172d;
-  display: flex
-}
-/* Footee set-up */  
-.footer {
-  background-color:rgb(149, 219, 246);
-  margin-top: 70px;
-  width: 100%;
-  padding: 50px 15%;
-  color: #06172d;
-  display: flex;
-}
-.footer div{
-  text-align: center;
-}
-.col-2{
-  flex-grow: 1;
-}
-.footer div h3{
-  font-weight:300;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
-}
-.col-1 a{
-  display:block;
-  text-decoration: none;
-  color: #06172d;
-  margin-bottom: 10px;
-}
-form input{
-  width: 250px;
-  height: 40px;
-  border-radius: 4px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  outline: none;
-  border: none;
-}
-form button{
-  background: transparent;
-  border: 2px solid #06172d;
-  color: #06172d;
-  border-radius: 30px;
-  padding: 7px 25px;
-  font-size: 15px;
-  cursor: pointer;
-}
-h3{
-  font-family:'Times New Roman', Times, serif
-}
-h5{
-  position: relative;
-  text-align: center;
-}  
 /* Main section set-up */  
 .main {
   background-color:white;
   margin-top: 30px;
   width: 100%;
+  height: 50%;
   padding: 25px 15%;
   color: #06172d;
   display:flex;
@@ -149,46 +93,10 @@ h5{
   text-align: center;
 }
 .col-2{
-  flex-grow: 1;
+  flex-grow:2;
   margin-left: 150px;
   margin-right: 150px;
 }
-.main div h3{
-  font-weight:300;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  margin-right: 50px;
-  margin-left: 40px;
-  letter-spacing: 1px;
-}
-.col-1 a{
-  display:block;
-  text-decoration:none;
-  color: #06172d;
-  margin-bottom: 10px;
-}
-button{
-  background: transparent;
-  border: none;
-  padding: 7px 25px;
-  font-size: 15px;
-  cursor: pointer;
-}
-h2{
-  position: relative;
-  text-align: center;
-}
-.main div p{
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 150px;
-  margin-left: -30px;
-  background-color: none; 
-  text-align: center;
-  font-size: 16px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  width:200px;
-  position: relative;
-}
+
+
+/* Recent videos section set-up */
