@@ -15,7 +15,7 @@ nav li{
   margin-left: 10px;
   padding: 5px;
   position:relative;
-  }
+}
 li {
   float: left;
 }
@@ -25,7 +25,7 @@ nav a{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 16px;
   text-align:inherit;
-  }
+}
 a .fa-solid{
 margin-right: 5px;
 }
@@ -162,4 +162,44 @@ hr {
   padding: 50px 15%;
   color: #06172d;
   display: flex;
+}
+.footer div{
+  text-align: center;
+}
+.col-2{
+  flex-grow: 1;
+}
+.footer div h3{
+  font-weight:300;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display:block;
+  text-decoration: none;
+  color: #06172d;
+  margin-bottom: 10px;
+}
+form input{
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+}
+form button{
+  background: transparent;
+  border: 2px solid #06172d;
+  color: #06172d;
+  border-radius: 30px;
+  padding: 7px 25px;
+  font-size: 15px;
+  cursor: pointer;
+}
+h5{
+  position: relative;
+  text-align: center;
 }
