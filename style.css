@@ -77,7 +77,9 @@ nav ul {
 .fa-solid fa-house{
   margin-right: 50px;
 }
- 
+
+/*Nav Bar toggler icon*/ 
+
 /* Main section set-up */  
 .main {
   background-color:white;
@@ -159,9 +161,11 @@ hr {
 .footer {
   background-color:rgb(149, 219, 246);
   margin-top: 50px;
+  margin-right: 0;
+  width: fit-content;
   padding: 30px 15%;
   color: #06172d;
-  display: flex;
+  display:flex;
 }
 .footer div{
   text-align: center;
