@@ -180,6 +180,7 @@ h4{
   justify-content:space-between;
   justify-content:center;
   text-align: left;
+  display:inline-flex;
 }
 .footer-map{
   width: 10rem;
@@ -194,6 +195,8 @@ h4{
   font-size: x-small;
   text-align:left;
   padding:5px;
+  margin-top: -70px;
+  margin-left: 70px;
 }
 form input{
   width: 200px;
