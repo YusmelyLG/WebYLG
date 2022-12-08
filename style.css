@@ -147,7 +147,7 @@ h2{
   text-align: left;
 }
 .footer-section-wrapper{
-  flex-grow: 0.5;
+  flex-grow:inherit;
   display:flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -155,7 +155,7 @@ h2{
   text-align: center;
   font-size: 0.75rem;
   line-height: 1.25;
-  position: var(#footer-logo);
+  border: solid red;
 }
 .footer-category{
   color: #06172d;
