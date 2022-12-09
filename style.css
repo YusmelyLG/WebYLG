@@ -135,8 +135,7 @@ h2{
   padding: 3rem 2rem;
   background-color:#B2E3F8;
   width: 100%;
-  max-height: 200px;
- 
+  max-height: 180px;
 }
 /* Img / Profile logo*/
 .footer-logo{
@@ -199,17 +198,16 @@ nav a{
 }
 .footer-section-wrapper{
   flex-direction: row;
-  justify-content:space-between;
   justify-content:space-around;
   justify-content:center;
   text-align: left;
   display:inline-flex;
-  gap:1.5rem;
+  gap:2.5rem;
 }
 /* Location / NL map */
 .footer-map{
   width: 10rem;
-  margin-left: -25px;
+  margin-left: -35px;
   margin-right: -80px;
   margin-top: 7px;
   text-align: right;
@@ -222,28 +220,35 @@ nav a{
   font-size: x-small;
   text-align:left;
   padding:5px;
-  margin-top:105px;
-  margin-left: -625px;
+  margin-top:85px;
+  margin-left: -535px;
+  font-family: cursive;
+  font-size:x-small;
+  font-style: italic;
 }
 /* Subscribe */
 form input{
-  width: 200px;
-  height: 40px;
+  width: 177px;
+  height: 35px;
   border-radius: 4px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 7px;
   margin-bottom: 10px;
+  margin-left: 10px;
   outline: none;
   border: none;
+  justify-content: space-around;
 }
 form button{
   background: transparent;
   border: 2px solid #06172d;
   color: #06172d;
   border-radius: 30px;
-  padding: 7px 23px;
+  padding: 6px 15px;
   font-size: 15px;
   cursor: pointer;
+  margin-left: 8px;
+  margin-top: -10px;
 }
 
 
