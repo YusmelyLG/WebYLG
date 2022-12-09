@@ -15,26 +15,82 @@ body{
   min-height: 100px;
   margin: auto;
 }
-/* Logo - Navegation menu */
-.nav-container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 2rem;
+/* Logo--Navegation-menu */
+.nav {
   background-color:#B2E3F8;
-  width: 100%;
-  max-height: 125px;
+  padding: 0 15px;
+}
+.a {
+  color: #06172d;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style: none;
 }
 /* Web Logo*/
-.nav-logo{
-  width: 10rem;
-  margin-left: -5px;
-  margin-right: -20px;
-  margin-top: -50px;
-  text-align: left;
+.logo {
+  padding: 7.5px 10px 7.5px 0px;
 }
-/* Nav Section*/
+.item {
+  padding: 10px;
+}
+/* Change the nav color to #rgb(202, 37, 92) (pink) on hover */
+.item:not(.buttom) a:hover,
+.item a:hover::after {
+  color: rgb(202, 37, 92);
+}
+/* Nav Menu*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a{
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a{
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.items {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  /*display: none;*/
+}
+.active .item{
+  display: block;
+}
+/* Submenus */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu{
+  display: block;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color:#06172d
+  padding-left:5px;
+}
+.subitem a{
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: aliceblue;
+  border-radius: 3px;
+}
+/* Toggle funtionality */
 
 
 /* Header - Banner */

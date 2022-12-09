@@ -20,62 +20,46 @@
 <div id="wrapper-div">
   
 <!--Navegation-menu-->
-<div class="nav-container">
-  <div class="footer-section-wrapper">
-  <!--Web Logo-->
-    <div class="nav-logo">
-      <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="145px"/></a>
-    </div>
-  <!--Nav Sections-->
+<nav>
+  <ul class="menu">
+    <!--Web Logo-->
+    <li class="logo"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="145px"/></a></li>
     <!--Home-->
-    <div class="nav-section">
-      <a href="#h"><i class="fa-solid fa-house"></i>Home</a>
-    </div>
+    <li class="item"><a href="#h"><i class="fa-solid fa-house"></i>Home</a></li>
     <!--About-->
-    <div class="nav-section">
-      <a href="#a"><i class="fa-solid fa-user"></i>About</a>
-      <div class="dropdown-content-About">
-        <ul>
-          <a href="#">About me</a>
-          <a href="#">Missions</a>
-        </ul>
-      </div> 
-    </div>
+    <li class="item has-submenu">
+      <a tabindex="0"><i class="fa-solid fa-user"></i>About</a>
+      <ul class="submenu">
+        <li class="submenu"><a href="#">About me</a></li>
+        <li class="submenu"> <a href="#">Missions</a></li>
+      </ul>
+    </li>
     <!--Content-->
-    <div class="nav-section">
-      <a href="#c"><i class="fa-solid fa-folder"></i>Content</a>
-      <div class="dropdown-content-Content">
-        <ul>
-         <a href="#c">YouTube</a>
-          <ul>
-            <a href="https://www.youtube.com/@ylgadventures5352/videos">Videos</a>
-            <a href="https://www.youtube.com/@ylgadventures5352/shorts">Shorts</a>
-          </ul>
-         <a href="#">Blog</a>
-         <a href="#">Podcast</a>
-        </ul>
-      </div>
-    </div>
+    <li class="item has-submenu">
+      <a tabindex="0"><i class="fa-solid fa-folder"></i>Content</a>
+      <ul class="submenu">
+        <li><a href="https://www.youtube.com/@ylgadventures5352/videos">YouTube Videos</a></li>
+        <li><a href="https://www.youtube.com/@ylgadventures5352/shorts">Shorts</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Podcast</a></li>
+      </ul>
+    </li>
     <!--Contact-->
-    <div class="nav-section">
-      <a href="#co"><i class="fa-solid fa-phone"></i>Contact</a> 
-    </div>
+    <li class="item"><a href="#co"><i class="fa-solid fa-phone"></i>Contact</a></li>
     <!--FAQ-->
-    <div class="nav-section">
-      <a href="#f"><i class="fa-regular fa-circle-question"></i>FAQ</a> 
-    </div>
+    <li class="item"><a href="#f"><i class="fa-regular fa-circle-question"></i>FAQ</a></li>
     <!--Language-->
-    <div class="nav-section">
-      <a href="#l"><i class="fa-solid fa-globe"></i>Language</a>
-      <div class="dropdown-content-Language ">
-        <ul>
-           <a href="#">English</a>
-          <a href="#">Spanish</a>
-        </ul>
-     </div>
-    </div>
-  </div>
-</div>
+    <li class="item has-submenu">
+      <a tabindex="0"><i class="fa-solid fa-globe"></i>Language</a>
+      <ul class="submenu">
+        <li><a href="#">English</a></li>
+        <li><a href="#">Spanish</a></li>
+      </ul>
+    </li>
+    <li class="toggle"><a href="#f"><i class="fas fa-bars"></i></li>
+  </ul>
+</nav>
+
     
 <!--Header/Banner-->
 <div id="header-banner-div">
