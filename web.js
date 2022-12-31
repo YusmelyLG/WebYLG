@@ -35,7 +35,7 @@ function toggleItem() {
 }
  
 /* Event Listeners */
-for (let item of items) {
+for (let item of items)
     if (item.querySelector(".submenu")) {
       item.addEventListener("click", toggleItem, false);
       item.addEventListener("keypress", toggleItem, false);

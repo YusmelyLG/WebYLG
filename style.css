@@ -42,7 +42,6 @@ body{
 .fa-solid fa{
   margin-right: 50px;
 }
- 
 .item {
   padding: 10px;
   justify-content: space-between;
@@ -52,7 +51,7 @@ body{
 .item a:hover::after {
   color: rgb(202, 37, 92);
 }
-/* Nav Menu*/
+/* Nav Menu FROM HERE JS*/ 
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +67,50 @@ body{
 }
 .menu li.subitem a{
   padding: 14px;
+}
+/* nuevo code*/ 
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+  .hamburger.activeb .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.activeb .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.activeb .bar:nth-child(1){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column; 
+    background-color: #B2E3F8;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+   }
+  .menu-item{
+    margin: 16px 0;
+  }
+  menu.active{
+    left: 0;
+  }
 }
 .toggle {
   order: 1;
@@ -106,15 +149,13 @@ body{
 .subitem a{
   padding: 10px 15px;
 }
-.submenu-active {
-  background-color: aliceblue;
-  border-radius: 3px;
-}
+
 .fa-solid{
   display: inline-block;
   margin-right: 3px;
   }
-
+/* Dropdow */
+  
 /* Header - Banner */
 #header-banner-div{
   display: flex;
