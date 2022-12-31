@@ -74,6 +74,7 @@ body{
   transition: .5s ease-in-out;
   margin-top: -10px;
   margin-left: 450px;
+  margin-right: 30px;
 }
 
 .navbar-toggler,
@@ -93,7 +94,7 @@ body{
 
 .toggler-icon {
   display: block;
-  position: absolute;
+  position: relative;
   height: 3px;
   width: 100%;
   background:#B2E3F8;
@@ -147,7 +148,6 @@ body{
   background: #06172d;
 }
 
-
 /* Web Logo*/
 .logo {
   padding: 7.5px 10px 7.5px 0px;
@@ -166,7 +166,7 @@ body{
 .item a:hover::after {
   color: rgb(202, 37, 92);
 }
-/* Nav Menu FROM HERE JS*/ 
+/* Menu*/ 
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -180,33 +180,19 @@ body{
   font-size:15px;
   color: #06172d;
 }
-.menu li.subitem a{
-  padding: 14px;
-}
+
 /* nuevo code*/ 
-.hamburger{
-  display: none;
-  cursor: pointer;
-}
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
 @media(max-width:768px){
-  .hamburger{
+  .toggle{
     display: block;
   }
-  .hamburger.activeb .bar:nth-child(2){
+  .toggle.activeb .bar:nth-child(2){
     opacity: 0;
   }
-  .hamburger.activeb .bar:nth-child(1){
+  .toggle.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.activeb .bar:nth-child(1){
+  .toggle.activeb .bar:nth-child(1){
     transform: translateY(-8px) rotate(-45deg);
   }
   .menu{
@@ -227,11 +213,6 @@ body{
     left: 0;
   }
 }
-.toggle {
-  order: 1;
-  font-size: 20px;
-  margin-left: 10px;
-}
 /* Change toggle menu color on hover */
 .toggle a:hover,
 .toggle a:hover::after {
@@ -246,14 +227,14 @@ body{
 .active .item{
   display: block;
 }
-/* Submenus */
-.submenu {
+/* Dropdow */
+.dropdown{
   display: none;
 }
-.submenu-active .submenu{
+.dropdown-active .submenu{
   display: block;
 }
-.has-submenu > a::after {
+.dropdown-item > a::after {
   font-family: "Font Awesome 5 Free";
   font-size: 12px;
   line-height: 16px;
@@ -261,15 +242,13 @@ body{
   content: "\f078";
   color:#06172d
 }
-.subitem a{
+.dropdown-item a{
   padding: 10px 15px;
 }
-
 .fa-solid{
   display: inline-block;
   margin-right: 3px;
   }
-/* Dropdow */
   
 /* Header - Banner */
 #header-banner-div{
