@@ -484,5 +484,16 @@ form button{
   width: 100%;
   
 }
-
-
+/*Message -blueHeart*/
+h5{
+  position:relative;
+  font-family:cursive
+  color: #06172d;
+  font-family: cursive;
+  font-size:x-small;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-around;
+  margin-button: -20px;
+}
