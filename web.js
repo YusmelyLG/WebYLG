@@ -1,4 +1,3 @@
-
 //Toggle menu
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
@@ -8,7 +7,7 @@ function toggleMenu() {
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
          
-        // adds the menu (hamburger) icon
+        // adds the menu (toggle) icon
         toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
     } else {
         menu.classList.add("active");
@@ -17,44 +16,22 @@ function toggleMenu() {
         toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
     }
 }
- 
-/* Event Listener */
-toggle.addEventListener("click", toggleMenu, false);
-
-const items = document.querySelectorAll(".item");
- 
-/* Activate Submenu */
-function toggleItem() {
-  if (this.classList.contains("submenu-active")) {
-    this.classList.remove("submenu-active");
-  } else if (menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    this.classList.add("submenu-active");
+function toggleMenu() {
+  if (menu.classList.contains("clicked")) {
+      menu.classList.remove("clicked");
+       
+      // adds the menu (toggle) icon
+      toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
   } else {
-    this.classList.add("submenu-active");
+      menu.classList.add("active");
+       
+      // adds the close (x) icon
+      toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
   }
 }
- 
-/* Event Listeners */
-for (let item of items)
-    if (item.querySelector(".submenu")) {
-      item.addEventListener("click", toggleItem, false);
-      item.addEventListener("keypress", toggleItem, false);
-    }   
+/* Event Listener */
 
-    
-/* Close Submenu From Anywhere */
-function closeSubmenu(e) {
-    if (menu.querySelector(".submenu-active")) {
-      let isClickInside = menu
-        .querySelector(".submenu-active")
-        .contains(e.target);
-   
-      if (!isClickInside && menu.querySelector(".submenu-active")) {
-        menu.querySelector(".submenu-active").classList.remove("submenu-active");
-      }
-    }
-  }
-   
-  /* Event listener */
-  document.addEventListener("click", closeSubmenu, false);
+/* Activate Dropdown */
+
+     
+/* Close Dropdown From Anywhere */

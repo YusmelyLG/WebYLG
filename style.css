@@ -466,5 +466,23 @@ form button{
   margin-top: -10px;
 }
 
+/*About me Page*/
+
+.small-img-c{
+  display:grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.small-img-r{
+  
+  cursor: pointer;
+}
+
+.small-img{
+  padding:2px;
+  width: 100%;
+  
+}
 
 
