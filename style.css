@@ -43,40 +43,20 @@ body{
   color: #06172d;
 }
 .menu ul{
-  display:block;
-  padding: 10px 20px;
-  margin-top: -20px;
+  display: block;
+  padding: 7px 20px;
+  margin-top: -17px;
   color: #06172d;
   float: left;
   background-color: #B2E3F8;
   border: none;
-  outline: none;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-  block-size: 100px;
-  transform: translateY(-10px);
-  transition: transform: 150ms ease-in-out;
+  overflow: hidden;
+  min-width: 1.2rem;
+  line-height: .5rem;
 }
 
-.dropdown-menu a{
-  float:left;
-  overflow: hidden;
-  color: #06172d;
-  text-decoration: none;
-  text-align: left;
-  overflow: hidden;
-  background-color: #B2E3F8;
-}
-/* Show the dropdown menu on hover */
-.dropdownmenu ul :hover{
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-.dropdown > .menu ul:focus + .dropdown-menu {
-  opacity: 1;
-}
+
+
 
 /* Setting distance between menu icons*/ 
 .fa-solid{
