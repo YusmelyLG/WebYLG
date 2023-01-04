@@ -16,12 +16,16 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
    <script src="https://icons8.com/icon/63777/github"Icons8="https://icons8.com"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
 </head>
 
 <body>
 <!--Webbody-->
 <div id="wrapper-div">
   
+
+
 <!--Navegation-menu-->
 <div id="logo-nav-div">
   <nav>
@@ -37,7 +41,7 @@
       </li>
     
       <!--Content-->
-      <li class="item has-dropdown">
+      <li class="ItemHasDropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</a>
         <ul class="dropdown-menu">
           <li class="dropdown-item"></li><a href="https://www.youtube.com/@ylgadventures5352/videos">Videos</a></li>
@@ -48,7 +52,7 @@
       <!--Contact-->
       <li class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/contactMe.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
       <!--Language-->
-      <li class="item has-dropdown">
+      <li class="ItemHasDropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</a>
         <ul class="dropdown-menu">
           <li class="dropdown-item"><a href="#">English</a></li>
@@ -57,7 +61,14 @@
       </li>
     </ul>
   </nav>
-  </div>
+  <!--Toggle Menu-->
+  <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <span class="toggler-icon top-bar"></span>
+    <span class="toggler-icon middle-bar"></span>
+    <span class="toggler-icon bottom-bar"></span>
+  </button>
+</div>
+
     
 <!--Header/Banner-->
 <div id="header-banner-div">
