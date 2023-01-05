@@ -17,4 +17,4 @@ It will give access to a photo library. You will also be able to leave comments 
 ## Demo Site
 https://yusmelylg.github.io/WebYLG/
 ## Screenshot
-![webScreenshot](https://user-images.githubusercontent.com/115137407/209951741-27cf9f6e-7085-47e4-9e2c-e861de076b53.png)
+![WebPic](https://user-images.githubusercontent.com/115137407/210710609-05813ff3-dec5-4a36-9aba-a68a73d01238.png)
