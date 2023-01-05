@@ -32,3 +32,6 @@ let toggleNav =function (){
       toggleNavStatus = false;
    }
 }
+$('#myCollapsible').on('hidden.bs.collapse', function () {
+   // do something…
+ })
