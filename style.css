@@ -235,6 +235,7 @@ hr{
  color:gray;
  background-color:gray
 }
+
 /* Recent Media Content / Logo Button */
 #content-box-div{
   display: flex;
@@ -320,6 +321,7 @@ h4{
 }
 .footer-list :hover {
   color: rgb(202, 37, 92);
+  font-weight: bold;
 }
 nav a{
   color:#06172d;
@@ -417,11 +419,9 @@ h5{
   margin-left: 145px;
   margin-bottom: 30px;
 }
-
 .fcf-form-group {
   margin-bottom: 1rem;
 }
-
 .fcf-input-group {
   position: relative;
   display: -ms-flexbox;
@@ -507,7 +507,6 @@ label.fcf-label {
   display: center;
   width: 45%;
 }
-
 .fcf-btn-block+.fcf-btn-block{
   margin-top: 0.5rem;
   color: rgb(202, 37, 92);
@@ -516,6 +515,21 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   width: 100%;
 }
 
-
-
-
+.blog-list{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #06172d;
+  font-size: 30px;
+  padding: 10px;
+  line-height: 1.5rem;
+  white-space:inherit;
+  align-items: flex-start;
+  text-align:left;
+}
+.blog-list :hover {
+  color: rgb(202, 37, 92);
+  font-weight: bold;
+}
