@@ -14,7 +14,11 @@
    <script src="https://kit.fontawesome.com/67b057a496.js" crossorigin="anonymous"></script>
    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63832550233b3c001362c735&product=sticky-share-buttons&source=platform" async="async"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  
+
+   <script>function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
 </head>
 <body>
 
@@ -28,11 +32,10 @@
     <ul class="menu">
       <!--Web Logo-->
       <li class="logo"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="125px"/></a></li>
-      <!--Menu button-->
-     
+
       <!--Home-->
       <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h"><i class="fa-solid fa-house"></i>Home</a></div>
-      
+
       <!--About-->
       <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/aboutMe.html" role="button" aria-expanded="false"><i class="fa-solid fa-user"></i>About</a></div>
 
@@ -59,12 +62,19 @@
           <a href="#">Spanish</a>
         </div>
       </div>
-      
-    </ul>
-  </nav>
+       <!--Menu button-->
+       <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+       type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+       <div class="container" onclick="myFunction(this)">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+       </div>
+       </button>
+    </ul>    
+  </nav> 
 </div>
 
-    
 <!--Header/Banner-->
 <div id="header-banner-div">
   <img style="float:center" src="Img/Grabando.png" alt="webbaner" width="100%" height="450px">  
@@ -184,7 +194,6 @@
 
 </div>
 
-<script src="web.js"></scrip>
 </body>
 </html>
 

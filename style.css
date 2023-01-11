@@ -62,6 +62,8 @@ body{
 .item a{
   display:inline-block;
   font-size:14px;
+  line-height: 2rem;
+  margin-top: .20rem;
 }
 .item input {
   top:0;
@@ -103,11 +105,46 @@ body{
   -webkit-transform-origin: top left;
   -webkit-transition-duration: 0.2s;
 }
-@media (max-width: 979px) {
-  .x-nav-wrap.mobile {
-      margin-top: 90px;
-  }
-  }
+
+/*Animated Menu Icon (click on it)*/ 
+.container {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 3px;
+  margin-top: 20px;
+  object-position: 50px;
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color:  #06172d;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+  background-color: rgb(202, 37, 92);
+}
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+  background-color: rgb(202, 37, 92);
+}
+.navbar-toggler{
+  display:inline-block;
+  padding: 10px 3px;
+  margin-top: -45px;
+}
+.navbar-toggler:hover{
+  cursor:pointer;
+  color: rgb(202, 37, 92);
+}
+
+
 /* Setting distance between menu icons*/ 
 .fa-solid{
   display: inline-block;
