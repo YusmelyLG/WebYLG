@@ -42,13 +42,88 @@ body{
   font-size:14px;
   color: #06172d;
 }
-
-/* Styling Dropdown*/ 
-.menu .dropdown-content{
-  display: none;
+.item{
+  display:inline-block;
+  padding: 15px 3px;
+  margin-top: -25px;
+  font-size:15px;
+  align-content: inherit;
+  color: #06172d;
 }
-.show {display:block;}
+/* Styling Dropdown
+<div class="dropdown">
+  <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</a>
+  <li class="myDropdown" class="dropdown-content">
+    <a href="#">English</a>
+    <a href="#">Spanish</a>
+  </li>
+</div>
+/* Styling Dropdown*/ 
 
+
+.c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}
+.item{
+  z-index:1;
+  position:relative;
+  display:inline-block;
+}
+
+.item input:after {
+  content:"";
+  width:100%;
+  height:2px;
+  position:absolute;
+  display:block;
+  background:#C63D0F;
+  bottom:0;
+  left:0;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition-duration: 0.2s;
+  -webkit-transform: scaleX(0);
+  -webkit-transform-origin: bottom left;
+  -webkit-transition-duration: 0.2s;
+}
+.item input {
+  top:0;
+  opacity:0;
+  display:block;
+  padding:0;
+  margin:0;
+  border:0;
+  position:absolute;
+  height:100%;
+  width:100%;
+}
+.item input:hover {
+  cursor:pointer;
+}
+.item input:checked:after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+}
+.item input:checked ~ .item-c {
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+}
+.item-c{
+  display:block;
+  position: relative;
+  background-color:#B2E3F8;
+  height:auto;
+  transform: scaleY(0);
+  transform-origin: top left;
+  transition-duration: 0.2s;
+  -webkit-transform: scaleY(0);
+  -webkit-transform-origin: top left;
+  -webkit-transition-duration: 0.2s;
+}
 
 /* Setting distance between menu icons*/ 
 .fa-solid{
@@ -70,16 +145,12 @@ body{
   justify-content: space-between;
 }
 /* Change the nav color to #rgb(202, 37, 92) (pink) on hover */
-.item:not(.buttom) a:hover,
+.item a:hover,
 .item a:hover::after {
   color: rgb(202, 37, 92);
   font-weight: bold;
 }
-.dropdown:not(.buttom) a:hover,
-.dropdown a:hover::after {
-  color: rgb(202, 37, 92);
-  font-weight: bold;
-}
+
 
 /* Header - Banner */
 #header-banner-div{
