@@ -52,7 +52,7 @@ body{
   font-size: 30px;
   margin-top:-25px;
 }
-
+/* Extra small devices -phones 600px and below */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -68,20 +68,26 @@ body{
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    
   }
   .content{
     width: 70px;
-    margin-inline: 45px;
-   
+    margin-inline: 70px;
+    justify-content: flex-start ;
+    text-align: left;
+    height: 125px;
+    width: 100px;
+    
   }
   }
-  @media screen and (max-width: 1085px) {
+  /* Large devices -laptops & desktops 992px and up */
+  @media screen and (max-width: 940px) {
     .footer-map {
       display: none;
     }
   }
-
+ 
+ 
 
 
 .topnav {
@@ -340,11 +346,11 @@ hr{
 }
 .content{
   display:inline-flex;
+  position: relative;
   flex-direction: row;
   flex-basis: 10%;
-  justify-content: center;
-  align-items: flex-start;
-  place-content: flex-start; 
+  
+ 
 }
 
 /* Footer */
@@ -356,13 +362,13 @@ hr{
   padding: 3rem 2rem;
   background-color:#B2E3F8;
   width: 100%;
-  max-height: 180px;
+  max-height: 150px;
 }
 /* Img / Profile logo*/
 .footer-logo{
   width: 10rem;
   margin-left: -5px;
-  margin-right: -20px;
+  margin-right: -30px;
   text-align: left;
 }
 /* Footer Section*/
@@ -376,7 +382,8 @@ hr{
   font-size: 0.75rem;
   line-height: 1.25;
   margin-left: -30px;
-  margin-top: -35px;
+  margin-right: -30px;
+  margin-top: -40px;
   margin-bottom: -40px;
 }
 .footer-section{
@@ -387,7 +394,7 @@ hr{
   margin-bottom: 0.75rem;
   margin-right: 0px;
   margin-top: 20px;
-  margin-left: -15px;
+  margin-left: -20px;
   margin-right:-15px;
   align-items: center;
   justify-content:space-around;
@@ -398,6 +405,7 @@ h4{
   font-family:'Times New Roman', Times, serif;
   color: #06172d;
   text-align: center;
+  margin-left: 15px;
 }
 .footer-list{
   display: flex;
@@ -406,7 +414,7 @@ h4{
   list-style-type: none;
   text-decoration: none;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: -15px;
   margin-left: -10px;
 }
 .footer-list :hover {
@@ -446,19 +454,19 @@ nav a{
   font-size: x-small;
   text-align:left;
   padding:5px;
-  margin-top:85px;
-  margin-left: -535px;
+  margin-top:70px;
+  margin-left: -553px;
   font-family: cursive;
   font-size:x-small;
   font-style: italic;
 }
 /* Subscribe */
 form input{
-  width: 177px;
+  width: 175px;
   height: 35px;
   border-radius: 4px;
   text-align: center;
-  margin-top: 7px;
+  margin-top: 0;
   margin-bottom: 10px;
   margin-left: 10px;
   outline: none;
@@ -471,10 +479,10 @@ form button{
   color: #06172d;
   border-radius: 30px;
   padding: 6px 15px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
-  margin-left: 8px;
-  margin-top: -10px;
+  margin-left: 10px;
+  margin-top: -20px;
 }
 
 /*Message -blueHeart*/
