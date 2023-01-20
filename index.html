@@ -17,7 +17,7 @@
  
   <script>
   function myFunction() {
-    var x = document.getElementById("myTopnav");
+    let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
@@ -31,13 +31,14 @@
 
 <!--Webbody-->
 <div id="wrapper-div">
+
     
 <!--Navegation-menu-->
-<div id="topnav">
+<div class="topnav" id="myTopnav">
   <nav>
-    <ul class="menu">
+    <ul>
       <!--Web Logo-->
-      <li class="logo"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="125px"/></a></li>
+      <div class="logo"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h"class="active" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="125px"></a></div>
 
       <!--Home-->
       <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h"><i class="fa-solid fa-house"></i>Home</a></div>
@@ -72,7 +73,7 @@
         <i class="fa fa-bars"></i>
       </a>
     </ul>    
-  </nav> 
+  </nav>
 </div>
 
 <!--Header/Banner-->
@@ -168,7 +169,7 @@
       
       <a href="https://www.facebook.com/profile.php?id=100008326392265" target="_blank"><img src="https://user-images.githubusercontent.com/115137407/202293265-81f45c8f-d3eb-462e-98cd-03d467d10bc8.png" alt="Facebook"/></a>
       
-      </nav>
+      
     </div>
     <!--Subscribe-->
     <div class="footer-section">
