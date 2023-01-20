@@ -109,21 +109,15 @@ body{
   }
  /* Extra Large devices -large laptops & desktops 1200px and up */
  @media screen and (min-width: 1025px){
-
- } 
   .footer-copyright-container{
-    flex-direction: row;
-    justify-content:space-between;
-    justify-content: space-around;
-    font-size: x-small;
-    text-align:left;
+    margin-top:70px;
     padding:5px;
     margin-top:70px;
-    margin-left: -553px;
-    font-family: cursive;
-    font-size:x-small;
-    font-style: italic;
+    margin-left: -575px;
+    margin-right: 575px;
   }
+ } 
+  
 /* Logo--Navegation-menu */
 #logo-nav-div{
   display: flex;
