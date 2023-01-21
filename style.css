@@ -31,7 +31,7 @@ body{
   text-align: center;
   padding: 7px 15px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: -10px;
   flex-direction: row;
 }
@@ -47,6 +47,8 @@ body{
   font-size: 30px;
   margin-top:-25px;
 }
+
+
 
 /* Extra small devices -phones 600px and below */
 @media screen and (max-width: 600px) {
@@ -89,7 +91,6 @@ body{
   }
   
   
- 
   @media screen and (min-width: 600px) {
   .topnav .item {
     display:inline-block;
@@ -98,7 +99,7 @@ body{
     align-content:space-between;
     padding: 15px 3px;
     top: 30px;
-    font-size:14px;
+    font-size:16px;
     color: #06172d;
     height: 50px;
   }
@@ -160,16 +161,17 @@ body{
   z-index:1;
   position:relative;
   display:inline-block;
-  font-size:14px;
+  font-size:16px;
   align-content: center;
   margin-top: -25px;
 }
-
+/* Align items of topnav */
 .item a{
   display:inline-block;
-  font-size:14px;
+  font-size:16px;
   line-height: 2rem;
-  margin-top: 8px;
+  margin-top: 6px;
+  
 }
 .item input {
   opacity:0;
@@ -189,19 +191,23 @@ body{
 }
 .item input:checked ~ .item-c {
   transform: scaleY(1);
+  background-color: white
  
 }
 
-/* display:flex; flex-direction:column */
+/* Tragets submenu elements */
 .item-c{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
   position: absolute;
-  top:55px;
-  bottom: -60px;
-  background-color:#B2E3F8;
-  width: 80px;
-  height:auto;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content:space-between;
+  align-content:initial;
+  text-align: center;
+ 
+  bottom: -5px;
   transform: scaleY(0);
   transform-origin: top left;
   transition-duration: 0.2s;
