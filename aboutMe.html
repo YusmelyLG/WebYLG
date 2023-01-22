@@ -14,61 +14,70 @@
    <script src="https://kit.fontawesome.com/67b057a496.js" crossorigin="anonymous"></script>
    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63832550233b3c001362c735&product=sticky-share-buttons&source=platform" async="async"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
-   <script src="https://icons8.com/icon/63777/github"Icons8="https://icons8.com"></script>
-
+ 
+  <script>
+  function myFunction() {
+    let x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
 </head>
-
 <body>
+
 <!--Webbody-->
 <div id="wrapper-div">
-  
-<!--Navegation-menu-->
-<div id="logo-nav-div">
-  <nav>
-    <ul class="menu">
-      <!--Web Logo-->
-      <li class="logo"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="125px"/></a></li>
-      <!--Menu button-->
-     
-      <!--Home-->
-      <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h"><i class="fa-solid fa-house"></i>Home</a></div>
-      
-      <!--About-->
-      <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/aboutMe.html" role="button" aria-expanded="false"><i class="fa-solid fa-user"></i>About</a></div>
 
-      <!--Content-->
-      <div class="item">
-        <input type="checkbox">
-        <div class="item-a" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</div>
-          <div class="item-c">
-            <a href="https://Youtube.com/channel/UC2MEQmmCVL2eDxSyRhSEFiQ">Videos</a>
-            <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/laNeta.html">Blog</a>
-            <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/blueHeart.html">Podcast</a>
-          </div>
-      </div>
-      
-      <!--Contact-->
-      <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/contactMe.html"><i class="fa-solid fa-phone"></i>Contact</a></div>
-    
-      <!--Language-->
-      <div class="item">
-        <input type="checkbox">
-        <div class="item-a" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</div>
-        <div class="item-c">
-          <a href="#">English</a>
-          <a href="#">Spanish</a>
+  <!--Navegation-menu-->
+  <div class="topnav" id="myTopnav">
+    <nav>
+      <ul>
+        <!--Web Logo-->
+        <div class="logo"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h" class="active" target="_blank"><img  aline="center" src="https://user-images.githubusercontent.com/115137407/205256666-488c0792-f3c3-44f6-bf2e-7f565fa473dc.png" max-width="60%" height="125px"></a></div>
+  
+        <!--Home-->
+        <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/index.html#h"><i class="fa-solid fa-house"></i>Home</a></div>
+  
+        <!--About-->
+        <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/aboutMe.html" role="button" aria-expanded="false"><i class="fa-solid fa-user"></i>About</a></div>
+  
+        <!--Content-->
+        <div class="item">
+          <input type="checkbox">
+          <div class="item-a" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</div>
+            <div class="item-c">
+              <a href="https://Youtube.com/channel/UC2MEQmmCVL2eDxSyRhSEFiQ">Videos</a>
+              <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/laNeta.html">Blog</a>
+              <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/blueHeart.html">Podcast</a>
+            </div>
         </div>
-      </div>
+        
+        <!--Contact-->
+        <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/contactMe.html"><i class="fa-solid fa-phone"></i>Contact</a></div>
       
-    </ul>
-  </nav>
-</div>
-    
-<!--Header/Banner-->
-<div id="header-banner-div">
-  <img style="float:center" src="Img/Grabando.png" alt="webbaner" width="100%" height="450px">  
-</div>
+        <!--Language-->
+        <div class="item">
+          <input type="checkbox">
+          <div class="item-a" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</div>
+          <div class="item-c">
+            <a href="#">English</a>
+            <a href="#">Spanish</a>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </ul>    
+    </nav>
+  </div>
+  
+  <!--Header/Banner-->
+  <div id="header-banner-div">
+    <img style="float:center" src="Img/Grabando.png" alt="webbaner" width="100%" height="450px">  
+  </div>
 
 <!--About me-->
 <div id="intro-div">
@@ -113,7 +122,7 @@
       
       <a href="https://www.facebook.com/profile.php?id=100008326392265" target="_blank"><img src="https://user-images.githubusercontent.com/115137407/202293265-81f45c8f-d3eb-462e-98cd-03d467d10bc8.png" alt="Facebook"/></a>
       
-      </nav>
+      
     </div>
     <!--Subscribe-->
     <div class="footer-section">
@@ -140,3 +149,4 @@
 
 </body>
 </html>
+
