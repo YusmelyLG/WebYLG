@@ -16,12 +16,10 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
  
   <script>
-  function myFunction() {
-    let x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+  function openToggleMenu() {
+    let x = document.getElementById("myTopnav"); //this line grabs the element by its if
+    if (x.className === "topnav") { //checks condition
+      x.className += " responsive"; //
     }
   }
   </script>
@@ -68,7 +66,7 @@
           <a href="#">Spanish</a>
         </div>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="openToggleMenu()">
         <i class="fa fa-bars"></i>
       </a>
     </ul>    
