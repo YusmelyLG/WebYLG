@@ -20,8 +20,12 @@
     let x = document.getElementById("myTopnav"); //this line grabs the element by its if
     if (x.className === "topnav") { //checks condition
       x.className += " responsive"; //
+    } else {
+    x.className = "topnav";
     }
   }
+  
+  
   </script>
 </head>
 <body>
@@ -45,9 +49,9 @@
 
       <!--Content-->
       <div class="item">
-        <input type="checkbox">
-        <div class="item-a" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</div>
-          <div class="item-c">
+        
+        <div class="item-a" data-bs-toggle="dropMenu" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</div>
+          <div class="dropdown-content">
             <a href="https://Youtube.com/channel/UC2MEQmmCVL2eDxSyRhSEFiQ">Videos</a>
             <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/laNeta.html">Blog</a>
             <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/blueHeart.html">Podcast</a>
@@ -59,15 +63,17 @@
     
       <!--Language-->
       <div class="item">
-        <input type="checkbox">
-        <div class="item-a" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</div>
-        <div class="item-c">
+        <div class="item-a" data-bs-toggle="dropMenu" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</div>
+        <div class="dropdown-content">
           <a href="#">English</a>
           <a href="#">Spanish</a>
         </div>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="openToggleMenu()">
         <i class="fa fa-bars"></i>
+      </a>
+      <a href="javascript:void(0);" class="icon-a" onclick="openDropMenu()">
+       
       </a>
     </ul>    
   </nav>
