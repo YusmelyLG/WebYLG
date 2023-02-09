@@ -62,7 +62,7 @@ body{
   .topnav.responsive a.icon {
     position: absolute;
     right: 20;
-    top: 70;
+    top: -15;
     display: block;
   }
   .topnav.responsive a {
@@ -108,6 +108,10 @@ body{
    margin-left: -3px;
    align-items: center;
   }
+/* To hide elment of dropDown */ 
+.topnav.responsive .dropdown-content{
+    display: none;
+  }
 }
 
 /* SMALL DEVICES -Portriat tablets & LARGE PHONES */
@@ -131,7 +135,7 @@ body{
     display:inline-flex;
     flex-direction:row;
     position: absolute;
-    transform: scaleY(0); /*Need to understand this code */
+    transform: scaleY(0); /*Need to understand this code ( it does the same than display:none */
     transform-origin: top left;
     transition-duration: 0.2s;
     -webkit-transform: scaleY(0);
@@ -190,7 +194,11 @@ body{
   }
  } 
 
-/*No hay cambios a partir de aqui/
+
+
+
+
+
 /* Header - Banner */
 #header-banner-div{
   display: flex;
