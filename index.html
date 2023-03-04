@@ -17,7 +17,7 @@
  
   <script>
   function openToggleMenu() {
-    let x = document.getElementById("myTopnav"); //this line grabs the element by its if
+    let x = document.getElementById("myTopnav"); //this line grabs the element by its id
     if (x.className === "topnav") { //checks condition
       x.className += " responsive"; //
     } else {
@@ -25,8 +25,19 @@
     }
   }
 
-  
-  
+
+  document.getElementById('openDropMenu').display = none;
+
+  function openDropMenu() {
+    let x = document.getElementById("item-a"); //this line grabs the element by its id
+    if (x.className === "item-a") { //checks condition
+      x.className += "dropdown-content: visible"; //
+    } else {
+    x.className = "item-a";
+    }
+  }
+
+
   </script>
 </head>
 <body>
@@ -50,25 +61,27 @@
 
       <!--Content-->
       <div class="item">
-        
-        <div class="item-a" data-bs-toggle="dropMenu" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</div>
-          <div class="dropdown-content">
+        <div class="item-a" data-bs-toggle="dropMenu" href="#" role="button" onclick="openDropMenu()"aria-expanded="false"><i class="fa-solid fa-folder"></i>Content</div>
+      
+        <div class="item-c">
             <a href="https://Youtube.com/channel/UC2MEQmmCVL2eDxSyRhSEFiQ">Videos</a>
             <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/laNeta.html">Blog</a>
             <a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/blueHeart.html">Podcast</a>
           </div>
       </div>
-      
+
       <!--Contact-->
       <div class="item"><a href="file:///Users/yusmelylg/Documents/GetCoding%20PROGRAM/WebYLG/contactMe.html"><i class="fa-solid fa-phone"></i>Contact</a></div>
     
       <!--Language-->
       <div class="item">
-        <div class="item-a" data-bs-toggle="dropMenu" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</div>
-        <div class="dropdown-content">
+        <div class="item-a" data-bs-toggle="dropMenu" href="#" role="button" onclick="openDropMenu()"aria-expanded="false"><i class="fa-solid fa-globe"></i>Language</div>
+       
+        <div class="item-c">
           <a href="#">English</a>
           <a href="#">Spanish</a>
         </div>
+        
       </div>
       <a href="javascript:void(0);" class="icon" onclick="openToggleMenu()">
         <i class="fa fa-bars"></i>

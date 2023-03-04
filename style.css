@@ -109,8 +109,13 @@ body{
    align-items: center;
   }
 /* To hide elment of dropDown */ 
-.topnav.responsive .dropdown-content{
+.topnav.responsive .{
     display: none;
+  }
+  .dropdown-content{
+    display:none;
+    flex-direction:row;
+    position: absolute;
   }
 }
 
@@ -132,14 +137,11 @@ body{
     font-weight: bold;
   }
   .dropdown-content{
-    display:inline-flex;
+    display:none;
     flex-direction:row;
     position: absolute;
-    transform: scaleY(0); /*Need to understand this code ( it does the same than display:none */
-    transform-origin: top left;
-    transition-duration: 0.2s;
-    -webkit-transform: scaleY(0);
   }
+
 }/* Align items of topnav */
 .item a{
   display:inline-block;
@@ -193,9 +195,6 @@ body{
     margin-right: 575px;
   }
  } 
-
-
-
 
 
 
